@@ -1,0 +1,89 @@
+%%%%%%%%%%%%%%%
+Action Research:
+De acordo com FULANO \cite{Iivari2009ActionResearch}, o Action Research ´´tem um duplo objetivo de contribuir para a prática e a pesquisa ao mesmo tempo.''
+
+Dicas do José:
+Mendeley, com Watch Folder, no OneDrive, vou colocando artigos lá.
+
+Buscar artigos:
+Google Scholar
+Research Gate
+Semantic Scholar
+DBLP
+IEEE XPLORE
+ACM DIGITAL LIBRARY
+Science Direct
+SciHub
+
+
+Como outras pessoas fizeram TCC?
+-BDM UnB
+
+Pegar BibTex:
+1º DBLP
+2º Semantic Scholar
+3º doi2bib
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Exemplo Fichamento:
+- The Ethics of AI Ethics: An Evaluation of Guidelines
+
+BREVE INTRODUÇÃO: O atual boom da Inteligência Artificial é acompanhado por apelos constantes à ética aplicada, que se destinam a aproveitar os potenciais "perturbadores" das novas tecnologias da IA.
+Em consequência, nos últimos anos foi desenvolvido todo um conjunto de diretrizes éticas compostos de princípios, às quais os desenvolvedores de tecnologia devem aderir na medida do possível.
+
+Entretanto, estas diretrizes éticas têm pouco impacto na tomada de decisão por parte dos desenvolvedores no campo de Inteligência Artificial e Machine Learning.
+
+PROBLEMA: Em que medida os princípios éticos são efetivamente implementados e incorporados no desenvolvimento e aplicação de IA, ou se são utilizadas meramente boas intenções. Pouco foi escrito sobre a implementação tangível de metas e valores éticos.
+
+PROPOSTA: Analisar e comparar 22 das maiores diretrizes de ética em IA. 1) Descrever quais questões eles omitem. 2) Comparar os princípios nas diretrizes com a prática concreta de pesquisa e desenvolvimento de sistemas baseados em IA; Examinando criticamente em que extensão os princípios têm efeito. 3) Elaborar ideias de como ética em IA pode ser transformada de um fenômeno meramente discurso para para ações concretas.
+
+QUESTÃO DE PESQUISA:
+
+METODOLOGIA:
+
+Conclusões e como foram obtidas/Trabalhos Futuros:
+
+- Quase todas as diretrizes sugerem que soluções técnicas existem para os muitos problemas descritos. Entretanto, apenas duas diretrizes contêm explicações genuinamente técnicas.
+
+- Atualmente, a ética em IA está falhando em muitos casos. A ética carece de um mecanismo de reforço.
+- Os desvios dos vários códigos de ética não têm consequências. 
+- E, nos casos em que a ética está integrada em instituições, serve principalmente como estratégia de mercado. 
+- Além disso, as experiências empíricas mostram que a leitura de orientações éticas não tem qualquer influência significativa na tomada de decisões dos programadores de software. 
+- Na prática, a ética em IA é frequentemente considerada como estranha, como excedentária ou de algum tipo de "add-on" às preocupações técnicas, como quadro não vinculativo que é imposto por instituições "fora" da comunidade técnica. A responsabilidade distribuída em junção com a falta de conhecimento sobre as consequências a longo prazo ou mais amplas da tecnologia da sociedade, faz com que os desenvolvedores de software não tenham um sentimento de responsabilidade ou uma visão do significado moral do seu trabalho. 
+
+- Especialmente os incentivos econômicos são facilmente superiores ao compromisso com princípios e valores éticos. Isso implica que os propósitos para os quais os sistemas de IA são desenvolvidos e aplicados não estão de acordo com os valores sociais ou direitos fundamentais, como beneficência, não maleficência, justiça e explicabilidade.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Fichamento 1:
+
+BREVE INTRODUÇÃO: 
+
+
+PROBLEMA:
+
+PROPOSTA: 
+
+Conclusões e como foram obtidos:
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Fichamento 1:
+O artigo em questão tem como foco abordar como princípios e prática podem andar conjuntamente, começando ao abordar o uso da inteligência artificial (IA) na sociedade como um todo, seja na área social ou na área econômica. Em paralelo, mostra os esforços de grandes empresas que constantemente estão desenvolvendo e criando modelos de IA em criar regras éticas para manter os princípios focados em gerar um ganho, seja social ou econômico, sem quebrar a confiança necessária no sistema desenvolvido. Porém juntamente com a criação destes princípios e a aplicação prática, Schiff et al mostra que ainda há muito o que ser aproximado para que ambos conjuntos estejam trabalhando em maior sintonia um com o outro, já que enquanto um apresenta formas de balizar questões mais voltadas a sociedade, a prática visa o maior empenho e otimização computacional para entrega de resultados.
+
+Isso se deve por conta de ainda exister uma grande complexidade entre ambos os campos, seja ainda no desenvolvimento de algoritmos puros ou nas questões de como estes algoritmos devem se comportar, visto que tais algoritmos não devem ter a potencialidade de ameaça aos usuários de tal sistema. Para defender este ponto, o autor aborda cinco temas que explanam a complexidade de aproximar a prática dos princípios responsáveis no uso de IA, mostrando como a complexidade dos impactos da IA podem ter um forte impacto na vida social e na ética, o custo destas consequências ser o mais dividido possível, as orientações de diferentes especialistas podem ser generalistas demais, que a existência de metodologias e ferramentas para a aplicação da IA com responsabilidade são mais difíceis do que se espera e que pessoas que são especialistas não costumam dividir o conhecimento com pessoas não tão especialistas visando alcançar um bem estar para a humanidade.
+
+Diante tais desafios, o autor propõe uma espécie de critéria para um framework eficiente de implantação responsável de AI, onde este framework precisa ser amplo, operacional, flexível, iterativo, guiado e participativo, e defente que o framework que apresenta tais critérias tem uma forte chance de apresentar uma integração eficiente o suficiente para ser responsável eticamente. O autor também defende que o uso dos padrões definidos pela IEEE 7010 podem fornecer uma forte baliza para a aplicação dos conceitos apresentados anteriormente para um framework eticamente responsável, e a implantação por institutos sejam de ensino superior ou de organizações de negócios podem ser bons ambientes para ver tais sistemas em ação.
+
+Como conclusão, o autor mostra um caso aplicado de reflorestamento auxiliado por IA, onde o sistema identifica se o crescimento da mata é orgânico ou se a destruição está sendo ocasionada por intervenção de queimadas, naturais ou mesmo interferência humana. E nisso ele mostra que a partir deste modelo de sistema, se tem como aplicar tanto as técnicas quanto as regras éticas em um sistema que vem para apresentar como essa integração é possível.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Fichamento 1:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Fichamento 1:
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Fichamento 1:
