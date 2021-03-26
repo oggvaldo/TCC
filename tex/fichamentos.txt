@@ -81,6 +81,41 @@ Como conclusão, o autor mostra um caso aplicado de reflorestamento auxiliado po
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Fichamento 1:
+Scrum é uma metodologia ágil para gestão e planejamento de projetos de software. Um framework dentro do qual pessoas podem tratar e resolver problemas complexos e adaptativos (SCRUM, 2017). Segundo Schwaber e Sutherland (2016) esta metodologia é leve, simples de entender, porém extremamente difícil de dominar. Para Pressman (2005) os princípios do Scrum são consistentes com o manifesto ágil. A metodologia Scrum é constituída por times, papéis, eventos, artefatos e regras, os quais são apresentados na Tabela 1. Cada componente dentro dessa metodologia serve a um propósito específico e é essencial para o uso bem sucedido do Scrum. O guia de Schwaber e Sutherland (2016) descreve os três pilares que são adotados pela metodologia Scrum:
+1. Transparência;
+2. Inspeção;
+3. Adaptação.
+
+Para tornar esses pilares vivos os valores de comprometimento, coragem, foco, transparência e respeito são assumidos e vividos pelo time. Os membros do time devem aprender e explorar estes valores à medida que trabalham com o Scrum. O sucesso no uso do Scrum depende do engajamento das pessoas a vivência destes valores (SCHWABER; SUTHERLAND, 2016).
+
+Capítulo 2. Referencial Teórico 29
+
+Tabela 1 – Time, Artefatos e Eventos do Scrum (SCHWABER; SUTHERLAND, 2016).
+Papel Descrição
+Product Owner - É o responsável por maximizar o valor do produto e do trabalho do Time de Desenvolvimento.
+Time de Desenvolvimento - São os profissionais que realizam o trabalho de desenvolvimento para entregar uma versão usável a cada Sprint.
+Scrum Master - É o responsável por garantir que o Time Scrum adere à teoria, práticas e regras do Scrum. 
+
+Artefato Descrição
+Backlog do Produto - É uma lista ordenada de tudo que deve ser necessário no produto, e é uma origem única dos requisitos para qualquer mudança a ser feita no produto.
+Backlog da Sprint -  É um conjunto de itens do Backlog do Produto selecionados para a Sprint.
+
+Evento Descrição
+Sprint - É coração do Scrum, um período de um mês ou menos, durante o qual uma parte do produto é criada. 
+Reunião de Planejamento de Sprint - É o momento onde o trabalho a ser realizado na Sprint é planejado na por todo o Time Scrum.
+Reunião Diária - É um evento de 15 minutos, para que o Time de Desenvolvimento possa sincronizar as atividades e criar um plano para as próximas 24 horas
+Revisão da Sprint - É executada no final da Sprint para inspecionar o incremento
+e adaptar o Backlog do Produto se necessário.
+Retrospectiva da Sprint - É uma oportunidade para o Time Scrum inspecionar a si próprio e criar um plano para melhorias a serem aplicadas na próxima Sprint.
+
+No Scrum as funcionalidades a serem implementadas em um projeto são mantidas no Backlog do Produto. O processo de desenvolvimento ocorre de forma iterativa, cada iteração é denominada Sprint e tem de 2 a 4 semanas. A cada Sprint, é feito uma Reunião de Planejamento de Sprint, uma reunião de planejamento onde o Product Owner prioriza os itens do Backlog do Produto e a Equipe de Desenvolvimento separa as atividades que ela será capaz de implementar durante a Sprint que se inicia. As tarefas selecionadas para a Sprint são transferidas do Backlog do Produto para o Backlog da Sprint. Além disso, a cada dia, a Equipe de Desenvolvimento faz uma breve reunião com o objetivo de alinhar o conhecimento dos membros da equipe sobre o trabalho que está sendo desenvolvido. E final de uma Sprint, a equipe realiza uma Revisão da Sprint, onde são apresentadas as funcionalidades implementadas. Por fim, é feito uma Retrospectiva da Sprint onde a
+equipe avalia o que foi feito e planeja a futura Sprint(SCRUM, 2017).
+
+
+Capítulo 2. Referencial Teórico 30
+
+Figura 7 – Processo de Desenvolvimento Scrum. (SCRUM, 2017)
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Fichamento 1:
