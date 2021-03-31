@@ -50,11 +50,11 @@ De acordo com Sommerville \cite{Sommerville07}, as atividades decorrentes do pro
  
  Uma das primeiras atividades a serem realizadas nos processos de Engenharia de Requisitos (RE) é a elicitação de requisitos, onde esta se passa pelos processos de aprendizado, imersão e descoberta de necessidades \cite{Hadar}. Esta área está diretamente ligada as origens dos requisitos do sistema e como os responsáveis pela engenharia de software conseguem coletá-los \cite{SWEBOK2014}. Para tanto, os profissionais da área, junto aos clientes e usuários finais do sistema em criação, trabalham de forma a obter insumos e dados a respeito o domínio da aplicação, os serviços a serem ofertados pelo sistema, como ele se desempenha, quais as limitações de hardware e assim por diante, de acordo Sommerville \cite{Sommerville07}.
 
-Essa atividade é realizada de forma puramente humana, onde os stakeholders são identificados e, a partir daí, o relacionamento entre equipe de desenvolvimento e cliente são consolidadas \cite{SWEBOK2014}. Essa atividade passa pelo envolvimento de diversos tipos de perfis dentro de uma organização, como por exemplo os próprios stakeholders, onde também se inserem os usuários finais que irão usar o sistema e/ou qualquer outra pessoa que seja afetada com este uso, de acordo Sommerville \cite{Sommerville07}.
+Essa atividade é realizada de forma puramente humana, onde os \textit{stakeholders} são identificados e, a partir daí, o relacionamento entre equipe de desenvolvimento e cliente são consolidadas \cite{SWEBOK2014}. Essa atividade passa pelo envolvimento de diversos tipos de perfis dentro de uma organização, como por exemplo os próprios \textit{stakeholders}, onde também se inserem os usuários finais que irão usar o sistema e/ou qualquer outra pessoa que seja afetada com este uso, de acordo Sommerville \cite{Sommerville07}.
 
-A elicitação tem como foco a identificação do problema, proposição de elementos para a solução, a negociação de abordagens distintas e a especificação de um conjunto primitivo de requisitos do produto em um ambiente que seja apto para o alcance deste objetivo \cite{pressman}. Um dos aspectos principais para uma elicitação de requisitos ser alcançado com sucesso é a fácil e eficiente comunicação entre os diversos stakeholders \cite{SWEBOK2014}.
+A elicitação tem como foco a identificação do problema, proposição de elementos para a solução, a negociação de abordagens distintas e a especificação de um conjunto primitivo de requisitos do produto em um ambiente que seja apto para o alcance deste objetivo \cite{pressman}. Um dos aspectos principais para uma elicitação de requisitos ser alcançado com sucesso é a fácil e eficiente comunicação entre os diversos \textit{stakeholders} \cite{SWEBOK2014}.
 
-Para tanto, é necessário uma coleção de modelos que seja consistente nos mais variados níveis de abstração, visando facilitar a comunicação entre os usuários do sistema (stakeholders) e os engenheiros de software \cite{SWEBOK2014}. Temos a disposição vários tipos de modelos de elicitação e análise de requisitos, onde para cada organização temos a sua versão ou instância que dependem de fatores ambientais locais, como por exemplo o nível de conhecimento do pessoal, a espécie de sistema a ser criado, quais normas serão usadas, entre outros \cite{Sommerville07}. 
+Para tanto, é necessário uma coleção de modelos que seja consistente nos mais variados níveis de abstração, visando facilitar a comunicação entre os usuários do sistema (\textit{stakeholders}) e os engenheiros de software \cite{SWEBOK2014}. Temos a disposição vários tipos de modelos de elicitação e análise de requisitos, onde para cada organização temos a sua versão ou instância que dependem de fatores ambientais locais, como por exemplo o nível de conhecimento do pessoal, a espécie de sistema a ser criado, quais normas serão usadas, entre outros \cite{Sommerville07}. 
  
 \section{Desenvolvimento Ágil de Software}
 
@@ -73,27 +73,132 @@ Idealizado em 2001 em uma carta pública divulgada na internet, o manifesto ági
 
 \end{itemize}
 
-% revisei até aqui quando alterar eu tenho que ler de novo
 \subsection{Metodologia Scrum}
 
-\todo[inline]{acho que isso tudo abaixo não importa, é você pegar e descrever o que o SCRUm, como funciona que é em sprints, backlogs e etc, é explicar ele rapidamente e nao essa parte histórica dele}
-%Criado por Jeff Sutherland e Ken Schwaber, a metodologia Scrum\cite{Scrum} foi inspirada após a leitura de um artigo criado por dois professores japoneses de nome Hirotaka Takeuchi e Ikujiro Nonaka, que explicavam como o processo de desenvolvimento em cascata era lento e, por isso, não era plenamente produtivo, além de mostrar como através de um sistema de sobreposição (conforme adotado pela Toyota) poderia ter um aproveitamento de produtividade muito maior em muito menos tempo, e suscetível a bem menos erros, devido tais fases possuírem mais interações \cite{NewNew}. Após a leitura deste artigo e perceber que os autores se referiam a tal método como uma jogada praticada pelos jogadores de rúgbi, que consistia na equipe se unir para levar a bola de um lado para o outro do campo coletivamente e com a bola passando pelas mãos de todos os jogadores e com o nome scrum, os dois autores implementaram o método lido no artigo anterior (que originalmente foi feito para a área administrativa) para o ambiente de produção de TI, percebendo que ao final do processo obtiam um software melhor escrito, com menos problemas de bugs, mais barato e com um sistema de revisão mais aprimorado \cite{Scrum}.
+Scrum é uma metodologia ágil para gestão e planejamento de projetos de software. Um framework dentro do qual pessoas podem tratar e resolver problemas complexos e adaptativos \cite{desenvolvimentoagil}. De acordo Schwaber e Sutherland \cite{Scrum} mesmo sendo uma metodologia fácil de entender e de baixo recursos, é um método de difícil execução, por ser difícil de dominar. Segundo Pressman \cite{pressman}, o entendimento e forma de lidar do Scrum batem diretamente com o manifesto ágil. A metodologia Scrum é formada por times, papéis, eventos, artefatos e regras, descritos na tabela \ref{table:1}.
+
+Cada um dos elementos nesta metodologia tem um foco específico e são cruciais para sucesso no uso. Schwaber e Sutherland \cite{Scrum} descrevem os principais pilares que são utilizados pela metodologia Scrum:
+
+\begin{enumerate}
+    \item Transparência;
+    \item Inspeção;
+    \item Adaptação.
+\end{enumerate}
+
+De acordo os membros do times aprendem e exploram os valores supracitados conforme lidam com os projetos usando a metodologia, percebe-se que os valores de comprometimento, coragem, foco, transparência e respeito são abraçados e se tornam parte comum no time. Conforme estes valores são internalizados há mais vivência com eles, as chances de sucesso no uso da metodologia \cite{Scrum}.
+
+\begin{table}[h!]
+    \centering
+    \caption{Time, artefatos e eventos do \textit{Scrum}\cite{Scrum}}
+    \small
+    \begin{tabular}{p{3cm} p{12cm}}
+        \hline\hline
+        \textbf{Papel} & \textbf{Descrição}\\ 
+        \hline
+        \textit{Product Owner} & Profissional responsável por entregar o máximo possível de valor do time de desenvolvimento e do produto.\\
+        \hline
+        Time de Desenvolvimento & Equipe de técnicos responsáveis pela entrega de uma versão utilizável do produto a cada \textit{Sprint}.\\
+        \hline
+        \textit{Scrum Master} & Profissional responsável pela fixação da teoria, práticas e regras do \textit{Scrum} e garantir que esta metodologia esteja em conformidade. \\
+        \hline
+        \textbf{Artefato} & \textbf{Descrição}\\  
+        \hline
+        \textit{Backlog} do Produto & Descrição de tudo o que o produto deve ter, estando este em constante evolução e sempre fornecendo de referência para as mudanças a serem registradas no produto.\\ 
+        \hline
+        \textit{Backlog} da \textit{Sprint} & É composta pelos itens da Product Backlog selecionados para aquela \textit{Sprint}, mais o plano de como entregar o incremento do produto e atingir os objetivos da \textit{Sprint}. Os itens são analisados pela equipe de desenvolvimento e divididos em tarefas. \\
+        \hline
+        \textbf{Evento} & \textbf{Descrição}\\
+        \hline
+        \textit{Sprint} & Parte central do \textit{Scrum} que ocorre por um tempo de duas a quatro semanas, período onde uma parte do produto é criada.\\
+        \hline
+        Reunião de Planejamento de \textit{Sprint} & Evento onde trabalho a ser realizado na \textit{Sprint} é planejado na por todo o Time Scrum. \\
+        \hline
+        Reunião Diária & Reunião com duração máxima de 15 minutos, para que o Time de Desenvolvimento possa informar o que foi realizado de trabalho no dia anterior, o planejamento do dia corrente e os possíveis bloqueios que estejam ocorrendo para o progresso da \textit{Sprint}.\\
+        \hline
+        Revisão da \textit{Sprint} & Reunião realizada ao final da \textit{Sprint} para revisar o incremento e adaptar o Backlog do Produto se necessário.\\
+        \hline
+        Retrospectiva da \textit{Sprint} & É uma oportunidade para o Time Scrum inspecionar a si próprio e criar um plano para melhorias a serem aplicadas na próxima Sprint.\\ 
+        \hline\hline
+    \end{tabular}
+    \label{table:1}
+  \end{table}
+
+No Scrum, as funcionalidades a serem implementadas em um projeto são mantidas no Backlog do Produto. O processo de desenvolvimento ocorre de forma iterativa, e cada iteração se dá o nome de \textit{Sprint}. as quais possuem um prazo de duas a quatro semanas para a sua conclusão. A cada \textit{Sprint}, se realiza uma Reunião de Planejamento de \textit{Sprint}, um evento onde o Product Owner prioriza os itens do Backlog do Produto e a Equipe de Desenvolvimento separa as atividades que ela será capaz de implementar durante a \textit{Sprint} que se inicia. As atividades selecionadas para a \textit{Sprint} são enviadas do Backlog do Produto para o Backlog da \textit{Sprint}. Além disso, a cada dia, a Equipe de Desenvolvimento faz reunião de breve duração (geralmente até 15 minutos) com o foco em alinhar o conhecimento dos membros da equipe sobre o trabalho que está sendo desenvolvido, além do planejamento para o dia e possíveis bloqueios que possam estar se sucedendo durante a execução dos trabalhos. Ao final de uma \textit{Sprint}, a equipe realiza uma Revisão da \textit{Sprint}, onde são mostrados as funcionalidades implementadas ou o que pode ter falho durante a entrega. No fim, é realizada uma Retrospectiva da \textit{Sprint} onde a equipe avalia o que foi realizado, o que faltou realizar e faz o planejamento da futura \textit{Sprint} \cite{Scrum}.
+
+\begin{figure}
+    \centering
+    \includegraphics{img/Imagem Scrum Primer.png}
+    \caption{Como uma Scrum é planejada, executada e seus membros} \cite{primer}
+    \label{fig:scrum}
+\end{figure}
 
 \subsection{Planning Poker}
 
-O Planning Poker consiste em uma técnica de estimativa voltada a metodologias ágeis, com o foco em tamanho de complexidade da estória para todos os membros de um time ágil \cite{planningpoker}. Este modelo é voltado para que cada membro possa colocar em vista durante a reunião de planejamento do projeto a ser executado como aquela história\cite{Scrum}. 
+O Planning Poker consiste em uma fácil execução e de divertida técnica de estimativa voltada a metodologias ágeis, com o foco em tamanho de complexidade da estória para todos os membros de um time ágil \cite{planningpoker,usingfunctionpoints,storyestimation}. Este modelo é voltado para que cada membro possa colocar em vista durante a reunião de planejamento do projeto a ser executado como aquela história\cite{Scrum}. Durante este processo, a equipe de desenvolvimento e os especialistas do negócio (geralmente o Product Owner) juntamente com um Scrum Master, se juntam para chegarem em um consenso coletivo relacionado às complexidades dos trabalhos a serem executados \cite{techplanningpoker}. Geralmente, este processo tende a criar resultados mais aceitáveis quanto ao menor risco e menos erros nas estimativas \cite{usingplanningpoker}.
+
+Neste processo, os participantes da reunião são providos de um \textit{deck} de cartas para o Planning Poker. Cada carta possui um valor único, como por exemplo 0, 1/2, 1, 2, 3, 5, 8, 13, 20, 40 e 100 e "?", geralmente utilizado quando o membro não sabe estimar o valor e deixa em aberto para a discussão e definição na rodada seguinte. Outra série comumente utilizada é a série de Fibonacci para os valores das cartas. Não se existe um consenso a respeito tais valores, porém geralmente a sequência de Fibonacci é a mais comum a ser utilizada \cite{evaluatingplanningpoker}.
+
+%inserir figura de um exemplo de planning poker.
+
+Os processos e os passos para o Planning Poker são simples e de fácil aplicação \cite{usingplanningpoker2}. Primeiramente, uma história de usuário será pega pelo moderador do jogo. Depois, o representante do cliente ou o Product Owner explica de forma clara, visando que todos os envolvidos entendam a história com atenção. Em caso de qualquer questão, o Product Owner é o responsável pela resposta. Logo após, cada participante estima o tamanho da história mostrando a carta que indique um valor. Este valor deve ser selecionado. Este valor deve ser selecionado ao considerar fatores influenciantes, como a complexidade e o risco de negócio envolvendo a história, por exemplo. Caso haja um consenso no valor das cartas apresentadas por todos os membros envolvidos, o valor é dado à história e o time escolhe outra história para a estimativa. Caso contrário, o membro ou os membros do Planning Poker que escolheram o maior e o menor valor precisam explicar os motivos do porquê terem dado aquele valor para a história e defenderem sua sugestão de valor. Após este ponto, o time conversa entre si sobre a história e discute a respeito de suas especificações, requerimentos e limitações em detalhe. Imediatamente após a discussão, a estimativa deve ser reavaliada. Este processo deve ser feito até que o time chegue a um consenso no valor da história. Após o consenso, este passo deve ser repetido para todas as histórias que fazem parte daquela reunião de planejamento e, assim, passarem a fazer parte da \textit{Sprint} corrente. \cite{predictingdevelopment}.
+
+De acordo Gandomani et al. \cite{gandomani}, após um estudo em uma empresa anônima, foi verificado que para o modelo funcionar é necessário maturidade da equipe como um todo, desde o processo de estimativa até o julgamento final entre a equipe para estimar corretamente a complexidade da história, porém nada impede que em algumas horas o time chegue a um consenso sem longas conversas entre si, acreditando no que um dos membros tem a relatar daquela história ou que em determinadas horas as longas conversas sejam necessárias para, assim, se chegar ao consenso final. De acordo o autor, este segundo ponto costuma trazer maior precisão na estimativa da complexidade do projeto. Porém, para ter chego a tal ponto, é necessário que a equipe trabalhe em regime colaborativo para que o consenso venha de forma mais natural e precisa.
 
 \section{Inteligência Artificial}
 
-\todo[inline]{Não precisa ficar descrevendo historico nao de onde surgiu e etc é ir conceitando direto e rapido ok, o limite de paginas do TCC é em media 70 paginas -- vá direto ao ponto}
+Quando se fala de Inteligência Artificial, é difícil defini-la, mas ao longo do tempo ela seguiu quatro linhas de pensamento:
 
-*ESCREVER SOBRE ORIGEM, PENSAMENTO E FORMALIZAÇÃO ACADÊMICA INICIAL*
+\begin{enumerate}
+    \item Sistemas que pesam como seres humanos: “O novo e interessante esforço para fazer os computadores pensarem... máquinas com mentes, no sentido total e literal”, de acordo Haugeland.\cite{haugeland}.
+    \item Sistemas que atuam como seres humanos: “A arte de criar máquinas que executam funções que exigem inteligência quando executadas por pessoas.”, de acordo Stalder\cite{stalder}.
+    \item Sistemas que pensam racionalmente: “O estudo das faculdades mentais pelo seu uso de modelos computacionais.”, de acordo Charniak\cite{charniak}.
+    \item Sistemas que atuam racionalmente: “A Inteligência Computacional é o estudo do projeto de agentes inteligentes.”, de acordo Poole et al.\cite{Poole}.
+\end{enumerate}
+
+
+Geralmente, as linhas de pensamento 1 e 3 apontam para o processo de pensamento e raciocínio, enquanto as 2 e 4 ao comportamento. Além disso, as linhas de pensamento 1 e 2 aferem o sucesso em razão à fidelidade relacionada ao desempenho humano, enquanto na 3 e 4 aferem o sucesso, fazendo uma comparação a um conceito ideal de inteligência, que se chamará de racionalidade. Um sistema é racional, inteligente se “executa tudo de acordo” com os dados fornecidos a ele, segundo Russel e Norvig\cite{russelnorvig}.
+
+Historicamente, as quatros perspectivas para o estudo da inteligência artificial têm sido seguidas. Sem surpresas, há uma tensão entre abordagens com o foco ao redor seres humanos e abordagens focadas na racionalidade. Uma abordagem focada em seres humanos precisa ser feita com o empirismo, envolvendo hipóteses e afirmação através de experimentos científicos. Enquanto isso, a abordagem racionalista é um misto de matemática e engenharia, segundo Russel e Norvig\cite{russelnorvig}.
+
+A \acrshort{IA} ainda é um assunto de difícil complexidade dependendo do tema atrelado ao qual é abordado. Ainda não sabemos se o homem seria capaz de criar a real inteligência artificial, ou chegar perto de construir um simulácro que possa descobrir as bases de como o cérebro humano se comporta, que é a base sua criação. Hoje, o que temos são que seus conceitos desenvolvidos ao longo de anos trazem incontáveis progressos e benesses para humanidade e que de certa forma ela sempre inovará e evoluirá gradativa e progressivamente, de acordo Stairs e Reynolds\cite{reynoldsstair}.
+
+Segundo Russel e Norvig, suas bases encontram-se em distintos campos, a partir de distintas perguntas, perspectivas e desafios, que se seguem na tabela abaixo \cite{russelnorvig}:
+
+\begin{table}[h!]
+    \centering
+    \caption{Relação campo vs pergunta \cite{russelnorvig}}
+    \small
+    \begin{tabular}{p{3cm} | p{12cm}}
+        \hline
+        Filosofia & Podem ser utilizadas regras formais para tirar conclusões válidas? Como a mente funciona em um cérebro físico? De onde vem o conhecimento? Como o conhecimento leva a ação?\\ 
+        \hline
+        Matematica & Quais são as regras formais para tirar conclusões válidas? O que pode ser computado? Como raciocinamos com informações incertas?\\
+        \hline
+        Economia & Como devemos tomar decisões para maximizar o retorno? Como devemos fazer isso quando outros não podem ir junto? Como devemos fazer isso quando a recompensa pode estar longe no futuro?\\
+        \hline
+        Neurociência & Como os cérebros processam informações?\\
+        \hline
+        Psicologia & Como os seres humanos e os animais pensam e agem?\\
+        \hline
+        Engenharia e Computação & Como podemos construir um computador eficiente??\\
+        \hline
+        Teorias de Controle e Cibernetica & Como as maquinas podem operar sob seu próprio controle?\\
+        \hline
+        Linguistica & Como a linguagem se relaciona com o pensamento? \\
+        \hline
+    \end{tabular}
+    \label{table:2}
+\end{table}
+
+De forma geral, para Kaufman \cite{kaufman} e em um olhar simplificado, podemos pensar a \acrshort{IA} como uma reexecução dos comportamentos que o cérebro humano pode controlar. A ação de dançar, por exemplo, é controlada pelo cérebro (acompanhar o par, coordenação da movimentação no ritmo de partes do corpo em geral), assim como o respirar é igualmente controlado pelo cérebro, mesmo que de forma indireta: as sensações que chegam no cérebro são parte do domínio da inteligência, estando potenciamente no campo da \acrshort{IA}. Porém, o "processo mental" da da \acrshort{IA} supera o processo mental humano, se, por um lado, a \acrshort{IA} executa tarefas que são por suposto competências dos seres humanos, sua capacidade ultrapassa limitações humanas como observado em distintas situações do dia a dia com o uso das tecnologias apropriadas, como por exemplo, um jogo de Xadrez\cite{xadrez} ou Go \cite{gojogo}. 
 
 \subsection{Ética em IA}
 
-*RESULTADO DO PRIMEIRO TÓPICO*
+ A palavra “ética”, tentando simplificar uma coisa que de forma alguma pode ser chamada de simples, indica um tipo de comportamento adquirido ou conquistado, portanto, não-instintivo. Trata-se, de toda forma, um modo de um ser humano, construído socialmente com base nas relações entre os seres humanos na sociedade. Refere-se diretamente a natureza da ação humana. Se a Inteligência Artificial representa uma nova “espécie” inteligente coexistindo com a espécie humana, nos parece legítimo supor que precisamos de uma nova ética. Este nos parece um dos maiores desafios posto no campo das ciências sociais, envolvendo a revisão de conceitos tradicionais e a elaboração de novos que permitam lidar com a complexidade decorrente dessa convivência entre duas “espécies” inteligentes, com a perspectiva de num futuro relativamente breve existir a dominância de uma sobre a outra (IA sobre os humanos) segundo Kaufman \cite{kaufman}.
 
-\section{Trabalhos Relacionados}
+  Para Kaufman \cite{kaufman}, dentro das questões que são consequência dos recentes avanços, a autonomia dos sistemas inteligentes se caracteriza como uma das mais relevantes, e não em vão uma das mais difíceis pela sua própria natureza: autonomia é uma prerrogativa inerente ao processo de aprendizado das máquinas (\textit{Deep Learning}). 
 
-%\section{Síntese do Capítulo}
-% Só se quiser, vale a pena
+ Dois dos conceitos que são referidos na literatura são: “responsabilidade social” e “ética”. A literatura apresenta diversos pontos de vista sobre estes conceitos. Para Fischer, responsabilidade social e a ética são conceitos muitas das vezes utilizados de maneira indiferenciada. Por exemplo, a responsabilidade social é posta como sendo a ética em um determinado contexto organizacional; a responsabilidade social empenha no impacto que a atividade do negócio tem em toda a sociedade. Enquanto que o conceito de ética está relacionado com a conduta daqueles que fazem parte da organização. A literatura não apresenta relação entre a responsabilidade social e a ética, apresentando ainda que a responsabilidade social tem diversas dimensões, entre elas a ética \cite{socialresponsability}. Um terceiro conceito revisto na literatura é a moralidade. De acordo com Beauchamp e Bowie \cite{ethicaltheory}, a moralidade refere-se a princípios ou regras de conduta moral tal como estão definidas na sociedade. A moralidade existe antes da aceitação ou rejeição dos seus standards pelos indivíduos, nesse sentido a moralidade não pode ser meramente uma política ou um código. Nesse sentido, a ética tem a ver com o refletir sobre a natureza e justificações do certo e do errado \cite{ethicaltheory}.
+
+\section{Síntese do Capítulo}
+Vimos neste capítulo a síntese teórica dos tópicos aos quais abordaremos na construção do guia de ética para aplicações no contexto de \acrshort{IA}. Demos uma passa desde as origens da engenharia de software, como ela formou a necessidade de formalizações para as definições em um projeto para a criação de um software, no qual resultou a engenharia de requisitos, área a qual auxilia a entender e levantar os requisitos necessários para o software atendendo aos desejos de seu solicitante. Com isso, vimos como o processo de elicitação de requisitos se forma em uma importante área para a correta avaliação de acordo seu \textit{stakeholder}. Foi verificado também como o desenvolvimento ágil de software nasceu visando que tais softwares não fossem criados apenas de forma rápida, porém também otimizando os recursos de tempo e dinheiro gastos durante a sua criação, e vemos como o Scrum é um dos métodos mais populares, onde em determinada fase do uso desta metodologia (a fase de planejamento da sprint), temos o uso de um jogo de cartas que, de forma divertida e de fácil entendimento, ajuda aos desenvolvedores avaliar o nível de complexidade de cada história a ser trabalhada em cima. Foi visto também os conceitos de inteligência artificial e quais são as suas implicações éticas, áreas em que o debate é essencial durante a fase de planejamento e vemos como todos os pontos citados anteriormente se casam. Para o capítulo 3, veremos como se dá o desenvolvimento de um guia em forma de \textit{planning poker} para auxiliar no debate de quais os limites éticos que a \acrshort{IA} a ser desenvolvida deverá se limitar, atendendo ao escopo e necessidades de seus \textit{stakeholders}.
