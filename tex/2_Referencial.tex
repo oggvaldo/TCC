@@ -124,7 +124,7 @@ Cada um dos elementos nesta metodologia tem um foco específico e são cruciais 
 
 No Scrum, as funcionalidades a serem implementadas em um projeto são mantidas no Backlog do Produto. O processo de desenvolvimento ocorre de forma iterativa, e cada iteração se dá o nome de \textit{Sprint}. as quais possuem um prazo de duas a quatro semanas para a sua conclusão. A cada \textit{Sprint}, se realiza uma Reunião de Planejamento de \textit{Sprint}, um evento onde o Product Owner prioriza os itens do Backlog do Produto e a Equipe de Desenvolvimento separa as atividades que ela será capaz de implementar durante a \textit{Sprint} que se inicia. As atividades selecionadas para a \textit{Sprint} são enviadas do Backlog do Produto para o Backlog da \textit{Sprint}. Além disso, a cada dia, a Equipe de Desenvolvimento faz reunião de breve duração (geralmente até 15 minutos) com o foco em alinhar o conhecimento dos membros da equipe sobre o trabalho que está sendo desenvolvido, além do planejamento para o dia e possíveis bloqueios que possam estar se sucedendo durante a execução dos trabalhos. Ao final de uma \textit{Sprint}, a equipe realiza uma Revisão da \textit{Sprint}, onde são mostrados as funcionalidades implementadas ou o que pode ter falho durante a entrega. No fim, é realizada uma Retrospectiva da \textit{Sprint} onde a equipe avalia o que foi realizado, o que faltou realizar e faz o planejamento da futura \textit{Sprint} \cite{Scrum}.
 
-\begin{figure}
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.6\textwidth]{img/Imagem Scrum Primer.png}
     \caption{Como uma Scrum é planejada, executada e seus membros \cite{primer}.}
@@ -137,7 +137,13 @@ O Planning Poker consiste em uma fácil execução e de divertida técnica de es
 
 Neste processo, os participantes da reunião são providos de um \textit{deck} de cartas para o Planning Poker. Cada carta possui um valor único, como por exemplo 0, 1/2, 1, 2, 3, 5, 8, 13, 20, 40 e 100 e ``?", geralmente utilizado quando o membro não sabe estimar o valor e deixa em aberto para a discussão e definição na rodada seguinte. Outra série comumente utilizada é a série de Fibonacci para os valores das cartas. Não se existe um consenso a respeito tais valores, porém geralmente a sequência de Fibonacci é a mais comum a ser utilizada \cite{evaluatingplanningpoker}.
 
-\todo[inline]{inserir figura de um exemplo de planning poker -- de repente do proprio sistema já}.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{img/planningpoker.png}
+    \caption{Exemplo de cartas de um Planning Poker \cite{visual}.}
+    \label{fig:planningpoker}
+\end{figure}
+
 
 Os processos e os passos para o Planning Poker são simples e de fácil aplicação \cite{usingplanningpoker2}. Primeiramente, uma história de usuário será pega pelo moderador do jogo. Depois, o representante do cliente ou o Product Owner explica de forma clara, visando que todos os envolvidos entendam a história com atenção. Em caso de qualquer questão, o Product Owner é o responsável pela resposta. Logo após, cada participante estima o tamanho da história mostrando a carta que indique um valor. Este valor deve ser selecionado. Este valor deve ser selecionado ao considerar fatores influenciantes, como a complexidade e o risco de negócio envolvendo a história, por exemplo. Caso haja um consenso no valor das cartas apresentadas por todos os membros envolvidos, o valor é dado à história e o time escolhe outra história para a estimativa. Caso contrário, o membro ou os membros do Planning Poker que escolheram o maior e o menor valor precisam explicar os motivos do porquê terem dado aquele valor para a história e defenderem sua sugestão de valor. Após este ponto, o time conversa entre si sobre a história e discute a respeito de suas especificações, requerimentos e limitações em detalhe. Imediatamente após a discussão, a estimativa deve ser reavaliada. Este processo deve ser feito até que o time chegue a um consenso no valor da história. Após o consenso, este passo deve ser repetido para todas as histórias que fazem parte daquela reunião de planejamento e, assim, passarem a fazer parte da \textit{Sprint} corrente. \cite{predictingdevelopment}.
 
@@ -198,14 +204,9 @@ Para Kaufman \cite{kaufman}, dentro das questões que são consequência dos rec
 
 Dois dos conceitos que são referidos na literatura são: responsabilidade social e ética. A literatura apresenta diversos pontos de vista sobre estes conceitos. Para Fischer \cite{socialresponsability}, responsabilidade social e a ética são conceitos muitas das vezes utilizados de maneira indiferenciada. Por exemplo, a responsabilidade social é posta como sendo a ética em um determinado contexto organizacional; a responsabilidade social empenha no impacto que a atividade do negócio tem em toda a sociedade. Enquanto que o conceito de ética está relacionado com a conduta daqueles que fazem parte da organização. A literatura não apresenta relação entre a responsabilidade social e a ética, apresentando ainda que a responsabilidade social tem diversas dimensões, entre elas a ética \cite{socialresponsability}. Um terceiro conceito revisto na literatura é a moralidade. De acordo com Beauchamp e Bowie \cite{ethicaltheory}, a moralidade refere-se a princípios ou regras de conduta moral tal como estão definidas na sociedade. A moralidade existe antes da aceitação ou rejeição dos seus standards pelos indivíduos, nesse sentido a moralidade não pode ser meramente uma política ou um código. Nesse sentido, a ética tem a ver com o refletir sobre a natureza e justificações do certo e do errado \cite{ethicaltheory}.
 
-
-% Edna parei aqui a revisão. 
-
 Os sistemas baseados em \acrshort{IA}, de acordo com Guizzardi et al. \cite{guizzardi2020ethical} não são agentes morais que podem agir com uma razão com base em princípios éticos. Pelo contrário, são softwares que tem suas funcionalidades e qualidades baseadas em requerimentos éticos, em adição a outros tipos de requerimentos que são requisitados para o preenchimento.
 
-Existe na literatura uma profusão de artigos que investigam como os sistemas baseados em IA devem ser agentes morais que tomam decisões éticas em tempo de execução \cite{guizzardi2020ethical}, por exemplo um carro decidir entre atropelar uma ou mais pessoas, um software não desligar a luz por situação social ou soltar poluentes em um navio não-tripulado em uma área de preservação que mate corais ou peixes em alto-mar.
- 
-Em contrapartida, estamos interessados em investigar como elicitar requisitos éticos para sistemas baseados para que eles estejam em conformidade com diretrizes e princípios éticos e outras funcionalidades que devam ter \cite{guizzardi2020ethical}
+Existe na literatura uma profusão de artigos que investigam como os sistemas baseados em IA devem ser agentes morais que tomam decisões éticas em tempo de execução \cite{guizzardi2020ethical}, por exemplo um carro decidir entre atropelar uma ou mais pessoas, um software não desligar a luz por situação social ou soltar poluentes em um navio não-tripulado em uma área de preservação que mate corais ou peixes em alto-mar. Em contrapartida, estamos interessados em investigar como elicitar requisitos éticos para sistemas baseados em IA para que eles estejam em conformidade com diretrizes e princípios éticos e outras funcionalidades que devam ter \cite{guizzardi2020ethical}.
  
 \subsection{Princípios}
 
@@ -262,13 +263,11 @@ Neste trabalho iremos utilizar como prova de conceito os princípios baseados no
 
 \section{Trabalhos relacionados}
 
-Foram encontradas na literatura um conjunto de ferramentas que auxiliam a implementação de ética em IA \cite{siqueira2021ethical} Neste estudo foi explorado um repositório de código aberto GitHub onde foram encontradas 21 ferramentas disponíveis publicamente que auxiliam a implementação de ética em IA, porem apos o sistema ter sido desenvolvido, e com grande foco no principio de Explicabilidade. 
+Foram encontradas na literatura um conjunto de ferramentas que auxiliam a implementação de ética em IA \cite{siqueira2021ethical}. Neste estudo foi explorado um repositório de código aberto GitHub onde foram encontradas 21 ferramentas disponíveis publicamente que auxiliam a implementação de ética em IA, porem apos o sistema ter sido desenvolvido, e com grande foco no principio de Explicabilidade. 
 
 Outro estudo \cite{morley2019initial} encontrou 106 ferramentas, estas porém, em geral, necessitam de adaptação para o contexto do desenvolvedor, ou seja, não são software de prateleira (\textit{off-the-shelf}), focam em partes especificas do processo de desenvolvimento de software. Tais ferramentas dispões de falta de documentação e usabilidade, além necessitarem uma forte alteração para se adequarem ao ambiente as quais deverão ser usadas.
 
-O que mais se assemelha a proposta do nosso trabalho é o do Vakkuri et al. \cite{ECCOLA}, onde um baralho de cartas é utilizado para auxiliar times de desenvolvimento a elicitar requisitos éticos em IA no contexto de desenvolvimento ágil.
-
-Portanto, nossa proposta envolverá a implementação deste método, ECCOLA, como uma Prova de Conceito.
+O que mais se assemelha a proposta do nosso trabalho é o do Vakkuri et al. \cite{ECCOLA}, onde um baralho de cartas é utilizado para auxiliar times de desenvolvimento a elicitar requisitos éticos em IA no contexto de desenvolvimento ágil. Portanto, nossa proposta envolverá a implementação deste método, ECCOLA, como uma Prova de Conceito.
 
 \section{Síntese do Capítulo}
 
