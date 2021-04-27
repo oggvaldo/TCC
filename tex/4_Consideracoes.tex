@@ -1,8 +1,18 @@
 \label{consideracoes}
 
-Escrever sobre conclusão do sistema. Como foi o seu comportamento, como foi a avaliação e percepção de uso.
+Este trabalho teve como objetivo a criação de um projeto piloto, em estilo de um \textit{Planning Poker}, para permitir a discussão de princípios éticos de \acrshort{IA}, resultando na criação deste WebApp que pode ser acessado por qualquer pessoa. Para uma prova de conceito, este sistema foi construído utilizando o guia ECCOLA, desenvolvido por Vakkuri et al. \cite{ECCOLA}, uma vez que possui princípios bem descritos e foi desenvolvido desde o seu início para ser utilizado como um \textit{Planning Poker}. 
 
-Este trabalho teve como objetivo fazer XYZ, desenvolvemos uma ferramenta para XXX. Descrever expectativas futuras quanto ao uso da ferramenta e como ela pode ser aplicada ao dia a dia de desenvolvedores na versão inicial.
+Esperamos que com esta ferramenta os desenvolvedores, em especial aqueles voltados para a área de \acrshort{IA} e \textit{Machine Learning} (uma vez que esta área também se baseia em princípios da \acrshort{IA} para o desenvolvimento de suas ferramentas) possam se aproveitar deste guia para não apenas criar em cima de princípios éticos já sugeridos, como os citados por Ryan e Stahl \cite{Ryan2020ArtificialIE} ou definidos e estabelecidos como os usados pela IEEE \cite{ieee2020EADv1}, mas também que possam estar olhando o desenvolvimento em IA com uma importante discussão em cima dos princípios éticos, fundamentais para o bom estabelecimento do código e suas diretrizes.
+
+Mesmo em sua versão inicial, o guia já apresenta robustez no uso para a discussão de tais princípios com um \textit{Scrum Master} ou \textit{Product Owner} apresentando os \textit{cards} por meio digital (uma vez que a pandemia de Covid-19 popularizou este modelo de reunião) e seus demais desenvolvedores discutindo em cima dos \textit{cards} em uma videochamada. Assim, com este modelo inicial, temos também em mente possíveis melhoras para as próximas iterações que podem vir a serem implantadas em trabalhos futuros.
 
 \section{Trabalhos futuros}
-Para trabalhos futuros nós apontamos (descrever como refinar mais o front-end, verificar recebimentos de issues no github do projeto, desenvolvimento de um backend para que a manipulação possa ser realizada por múltiplos usuários enquanto as discussões e como desenvolver um modo gráfico para a alteração das cartas por outros usuários mais leigos, sem a necessidade de alteração do código-fonte para ...
+
+% 1 - Lado admin pro Product Owner alterar cards sem ser diretamente no código
+Para trabalhos futuros nós apontamos a possibilidade de melhorias na interface gráfica do sistema, deixando-o ainda mais limpo e editável através da própria página inicial, sendo necessário apenas alguns cliques e paciência por parte do \textit{Product Owner} inserir os dados necessários para a criação de novos \textit{cards} sem a necessidade de alterações diretas no código-fonte da aplicação.
+
+% 2 - Lado admin para realizar login e espaço para anotação ser persistente
+Outra possível melhora que traria impacto imediato seria a implantação de um back-end robusto, com conexão persistente a fim de viabilizar a implamantação do modo cliente-servidor, dessa forma, não haveria a necessidade de alguma pessoa no cargo de \textit{Product Owner} ou \textit{Scrum Master} esteja mostrando a tela enquanto os cards são escolhidos. Com a implantação deste back-end poderíamos ter as cartas sendo selecionadas e mostradas através de uma videochamada, mas também permitindo a interatividade no próprio navegador com os participantes da reunião de planejamento da semana. 
+
+% 3 - que isso?
+Por fim, apontamos a implantação de um banco de dados para armazenar \textit{templates} de requisitos éticos já existentes e armazenamento dos requisitos éticos desenvolvidos pelos desenvolvedores que melhor se encaixam em seu projeto, permitindo assim uma ferramenta que pode ser usada \textit{out-of-the-box}, somente executar e já iniciar o uso sem grandes edições como nesta edição, assim permitindo que usuários com pouco ou nenhum conhecimento em lógica de programação e das linguagens utilizadas a momento neste guia (JavaScript, \acrshort{HTML} e \acrshort{CSS}).

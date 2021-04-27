@@ -1,50 +1,77 @@
 \label{introducao}
 
-A cada dia que passa, temos um mundo onde as tomadas de decisões se tornam mais e mais cruciais, assim como temos um mundo que tem feito da área de Tecnologia da Informação e Comunicação (TIC) como uma área base para outras competências, seja desde a organização de estoques até a área de computação ubíqua, passando pelo uso de mais e mais dispositivos com um imenso poder computacional, como smartphones, tablets, smart TVs, smartwatches, assistentes pessoais, entre outros. 
+Ao longo do tempo as soluções tecnológicas de tomada de decisões se tornam mais e mais cruciais, assim como o crescimento da área de Tecnologia da Informação e Comunicação (TIC) como um campo base para outras competências, desde a organização de estoques até a área de computação ubíqua, além do aumento acelerado do uso de dispositivos com alta capacidade computacional, como smartphones, tablets, smart TVs, smartwatches, assistentes pessoais, entre outros \cite{Sommerville07}.
 
-Em um mundo com tanta dependência computacional como hoje em dia, tem se tornado mais e mais comum o advento do uso de técnicas de computação baseadas em aprendizado de máquina (\textit{Machine Learning}), análise de dados e Inteligência Artificial (IA). Porém, junto com este uso massivo de tais áreas, começamos a ver fortes implicações sociais na vida das pessoas, como, por exemplo, a forma de determinar como e até que ponto a \acrshort{IA} se encontrará presente em um determinado sistema. Concomitante com a situação contemporânea, é necessário que nos processos de implantação sejam postos em produção o quanto antes, o que hoje é possível graças as técnicas de metodologias ágeis que foram desenvolvidas desde a década de 70 e sendo formalmente manifestas em fevereiro de 2001 com o manifesto ágil \cite{agilemanifesto}. 
+Esta dependência computacional atual, tem se reforçado com a manifestação do uso de técnicas de computação baseadas em Inteligência Artificial (IA), como Aprendizado de Máquina (\textit{Machine Learning}) e \textit{Deep Learning} (DL) \cite{vogelsang2019requirements, morley2019initial}. Estas técnicas estão sendo empregadas de maneira amplamente difundida em áreas como vigilância, saúde, negócios, transportes, entre outros. Entretanto, este uso massivo de sistemas baseados em IA têm levantado questões acerca das questões éticas que estas implicam \cite{vakkuri2020current,morley2019initial}. Incidentes relacionados amplamente divulgados em meios de comunicação chamaram a atenção da população em geral, e.g., um sistema baseado em IA utilizado como um juiz de um concurso de beleza que selecionou na sua maioria participantes brancos \cite{RacialAIJudge}, e um chatbot da Microsoft que em pouco tempo apresentou características racistas \cite{MicrosoftRacistChatbox}.
 
-Com essas metodologias em ascensão, é natural que durante o desenvolvimento de projetos onde se envolve a \acrshort{IA} se depare com problemas, dilemas, dúvidas e discussões envolvendo a ética a ser abordada no projeto. E verificando a ausência de ferramentas que possam facilitar a solução deste problema, vemos neste projeto a oportunidade de preencher esta lacuna.
+Usualmente, ética em IA tem sido explorada na literatura em seu aspecto teórico, através de diretrizes e princípios éticos \cite{mittelstadt2019principles}. Apesar de necessárias, existem poucas explicações práticas para os desenvolvedores operacionalizarem estes princípios em seus projetos, agravado pela necessidade de rapidez e lucro do mercado \cite{mittelstadt2019principles}, em que geralmente as considerações éticas envolvidas é uma qualidade a ser considerada no software apenas após sua implantação \cite{ECCOLA}. Uma das maneiras de abordar esta urgência em entregas cada vez mais rápidas é através das técnicas de metodologias ágeis, que vêm sendo desenvolvidas desde a década de 70, e sendo formalmente manifestas em fevereiro de 2001 com o manifesto ágil \cite{agilemanifesto}. 
 
+Com o crescente uso desta metodologia, em projetos onde se envolve o desenvolvimento de sistemas baseados em \acrshort{IA} os desenvolvedores enfrentam problemas, dilemas, dúvidas e discussões envolvendo a ética a ser abordada no projeto. A vasta maioria de ferramentas disponíveis para operacionalizar ética em IA são limitadas em termos de usabilidade, e pouca evidência existe sobre testes, validade e impacto dos sistemas desenvolvidos \cite{morley2021EthicsAsAService}.
+
+Na Engenharia de Software, a fase de elicitação de requisitos é a primeira etapa do ciclo de desenvolvimento de software \cite{Sommerville07}, e durante sua execução ocorre uma maior interação entre diferentes atores envolvidos no desenvolvimento do software e em seu uso, proporcionando um ambiente favorável para a discussão de questões éticas \cite{Kostova2020}, além de haver uma redução de trabalho adicional ao serem consideradas as questões éticas nas fases iniciais do desenvolvimento de software, e não como um pensamento posterior \cite{ECCOLA}.
+
+O método ECCOLA apresentado por Vakkuri et al. \cite{ECCOLA} é um método para operacionalizar a ética em IA na fase de elicitação de requisitos através do uso de cartas, semelhante ao Planning Poker, através de perguntas, aumentando a consciência ética em times de desenvolvimento ágil. Para o melhor do nosso conhecimento, não foi encontrado na literatura a implementação deste sistema, tampouco um caso de uso. Morley et al. \cite{morley2019initial} apontaram como oportunidades de pesquisa testar ferramentas ou métodos, identificar, propor ou melhorar os métodos e ferramentas de apoio a implementação dos princípios de ética no contexto de IA no processo de desenvolvimento de software. Nessa conjuntura, o objetivo deste trabalho é implementar uma ferramenta para o auxílio da implementação de princípios éticos em IA por times de desenvolvimento de software, servindo como um guia e podendo ser customizado à diversas diretrizes ou contextos, e disponibilizá-lo publicamente.
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Problema de Pesquisa}
+\label{problem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Não há uma ferramenta digital que possa auxiliar times de desenvolvimento com o foco em \acrshort{IA}. \todo[inline]{melhorar, pode trazer um pouco do problema do trabalho do José para cá, mas com foco na falta de uma ferramenta de apoio}
+Existem na literatura trabalhos que apresentam coleções de ferramentas para a implementação de ética em IA \cite{morley2019initial,siqueira2021ethical}. Apesar de auspiciosas, a grande maioria das ferramentas e métodos não possuem usabilidade, e oferecem pouca ajuda para serem colocadas em prática \cite{vakkuri2020current,morley2021EthicsAsAService,morley2019initial}. Além disso, há uma necessidade em se colocar em prática as ferramentas, para se encontrar o que funciona ou o que necessita ser melhorado. Um método encontrado na literatura para operacionalizar ética em IA é o método ECCOLA\cite{ECCOLA}. Diante deste cenário, o nosso problema de pesquisa é que não existe, até então, uma implementação digital do método ECCOLA \cite{ECCOLA}.
 
-\section{Justificativa}
+Portanto, este trabalho tem o objetivo de apresentar um software que tem a finalidade de operacionalizar ética em sistemas baseados em IA durante a fase de elicitação de requisitos com foco em times de desenvolvimento ágil.
 
-Em um mundo onde os recursos estão sendo utilizados de forma mais racional a cada dia que se passa, é necessário haver uma ferramenta que possa ajudar aos desenvolvedores na área de \acrshort{IA} a adequarem também a parte ética, uma vez que com o advento desta área se começa a entrar em uma área cinza e ainda pouco desbravada.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Justificativa}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\todo[inline]{melhorar, pode trazer um pouco da justificativa do trabalho do José para cá, mas com foco nos beneficios que a ferramenta pode trazer}
+A área de ética em IA surgiu como uma resposta às diversas consequências danosas aos indivíduos e à sociedade que o mal uso, mal projeto, abuso ou as não intencionais que os sistemas baseados em IA podem causar \cite{leslie2019understanding}. Alguns dos danos potenciais causados por sistemas baseados em IA são: viés e discriminação, negação da autonomia individual, resultados não-transparentes, invasões de privacidade, insegurança, entre outros \cite{leslie2019understanding}. Além da ampla gama de diretrizes publicadas por diversos tipos de instituições a fim de mitigar estes problemas \cite{jobin2019global}, também procura-se diminuir a lacuna entre a teoria e prática através de ferramentas. Entretanto, a existência destas ferramentas é considerada necessária, mas não suficiente \cite{morley2021EthicsAsAService}, muitas são relativamente imaturas, possuem pouca usabilidade, e representam um trabalho adicional aos desenvolvedores ao serem colocados em prática por necessitarem modificações ao contexto \cite{morley2019initial,vakkuri2020current,siqueira2021ethical,ECCOLA}.
 
-\section{Objetivos}
+Algumas questões de pesquisa apresentadas por Morley et al. \cite{morley2019initial} são:
+
+\begin{enumerate}
+    \item A criação de ferramentas que garantam às pessoas, como indivíduos, grupos e sociedades, uma oportunidade igual e significativa de participar na concepção de soluções algorítmicas em cada fase de desenvolvimento;
+    \item A avaliação dos instrumentos atualmente existentes para que se possa identificar o que funciona, o que pode ser melhorado, e o que precisa de ser desenvolvido;
+    \item O compromisso de reprodutibilidade, abertura e partilha de conhecimentos e soluções técnicas (por exemplo, software), também com vista a satisfazer (1) e apoiar (2).
+\end{enumerate}
+
+No contexto onde os recursos são utilizados de forma mais racional, é necessária a criação de uma ferramenta que possa auxiliar os desenvolvedores na área de \acrshort{IA} a adequarem também as questões éticas, uma vez que com o advento desta área se começa a entrar em uma zona cinza e ainda pouco explorada, onde as ferramentas existentes ainda são pouco efetivas \cite{morley2021EthicsAsAService}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Objetivos}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Objetivo Geral}
 
-O objetivo deste trabalho é automatizar uma ferramenta para apoiar os analistas de requisitos e implementar os requisitos éticos no contexto de IA. 
+O objetivo deste trabalho é automatizar um método encontrado na literatura para apoiar a elicitação de requisitos éticos em sistemas baseados em IA no contexto de equipes de desenvolvimento ágil.
 
 \subsection{Objetivo Específicos}
-%a preencher
+\begin{enumerate}
+    \item Realizar uma busca na literatura por conceitos, embasamento teórico, trabalhos relacionados, e o método que será implementada neste trabalho;
+    \item Escolher as soluções tecnológicas a serem empregadas na implementação do guia;
+    \item Desenvolver o guia para elicitação de requisitos éticos em IA;
+    \item Relatar o desenvolvimento do guia e elaboração de documentação.
+\end{enumerate}
 
-\section{Metodologia}
-%a preencher
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Metodologia de Pesquisa}
+\label{metodologia}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\todo[inline]{a mesma do josé mas só com foco na etapa do DSR em que ele desenvolve a ferramenta --- peça ele para te ajudar a recortar de lá. }
+Ao longo deste trabalho, iremos utilizar a metodologia \textit{Design Science Research} (DSR) \cite{vaishnavi2015design}. Esta metodologia foi adotada pois auxilia a construção de um artefato e melhorá-lo através de um processo contínuo de refinamento e avaliação. Neste trabalho foi utilizado o ciclo de DSR baseado em Vaishnavi et al. \cite{vaishnavi2015design}, composto pelas seguintes fases: compreensão do problema, sugestão, desenvolvimento, avaliação e conclusão. Entretanto, iremos abordar neste trabalho apenas as fases de Compreensão do problema, Sugestão e Conclusão.
 
+\begin{enumerate}
+    \item \textbf{Compreensão do problema:} Nesta fase ocorre a busca de informações sobre o problema a ser investigado, sem solucioná-lo todavia. Busca-se o entendimento e a descrição do problema, identificando os principais conceitos e afetados pelo problema, além dos objetivos, causa do problema, efeitos e contribuições quando atingidos os objetivos. Portanto, nesta etapa foi conduzida uma exploração da literatura;
+    \item \textbf{Sugestão:} A sugestão é primordialmente uma etapa criativa no qual novas configurações são concebidas e assentadas em uma nova configuração de novos elementos ou de elementos previamente existentes. Para esta fase, foi concebido um artefato, considerando o método ECCOLA \cite{ECCOLA}. O artefato proposto foi um guia -- em forma de prova de conceito -- para apoiar a implementação de ética em IA em equipes de desenvolvimento. Esta fase tem como saída um projeto piloto.
+    \item \textbf{Conclusão:} Por último, apresentamos as considerações finais, apontando possíveis trabalhos futuros.
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Estrutura do Trabalho}
-Na Seção \ref{desenvolvimento}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%Engenharia de Software, Agil, Scrum, Planning Poker, IA, Engenharia de Requisitos, Engenharia de Requisitos para IA
-
-
-Este trabalho está organizado em cinco Capítulos, além deste, consistindo em:
+Este trabalho está organizado em quatro capítulos, além deste, consistindo em:
 \begin{itemize}
-
-    \item \textbf{Capítulo 2:} apresenta a fundamentação teórica em relação aos conceitos de ética em IA. Além disso, são apresentados os trabalhos correlatos identificados na revisão de literatura.
-
-    \item \textbf{Capítulo 3:} apresenta uma proposta de um guia para apoiar a implementação da ética no desenvolvimento de aplicações no contexto de IA.
-
-    \item \textbf{Capítulo 4:} apresenta as nossas considerações finais deste trabalho e apontamos trabalhos futuros.
-    % \item \textbf{Capítulo 4:} apresenta os resultados da validação do guia proposto.
-
-    % \item \textbf{Capítulo 5:} apresenta as nossas considerações finais deste trabalho e apontamos trabalhos futuros.
-
+    \item \textbf{Capítulo 2 \ref{referencial}:} apresenta a fundamentação teórica em relação aos conceitos de ética em IA. Além disso, são apresentados os trabalhos correlatos identificados na revisão de literatura.
+    \item \textbf{Capítulo 3 \ref{desenvolvimento}:} apresenta uma proposta de um guia para apoiar a implementação da ética no desenvolvimento de aplicações no contexto de IA.
+    \item \textbf{Capítulo 4 \ref{consideracoes}:} apresenta as nossas considerações finais deste trabalho e apontamos trabalhos futuros.
 \end{itemize}
